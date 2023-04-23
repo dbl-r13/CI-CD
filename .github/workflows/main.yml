@@ -18,5 +18,5 @@ jobs:
         aws-region: us-east-1
     - name: Copy files to the website with the AWS CLI
       run: |
-        aws s3 sync . s3://tester-bucket123
+        aws s3 sync . s3://tester-bucket123 --exclude ".git/*"
  
